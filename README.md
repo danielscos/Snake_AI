@@ -1,16 +1,30 @@
 # Snake AI Pytorch
-This is a simple project to teach an AI to play the Snake game using reinforcement learning. The AI is implemented using a simple feedforward neural network and trained using the Proximal Policy Optimization (PPO) algorithm. The game is implemented using Pygame.
-
-Project made by: Daniel Grosso.
+This is a simple snake game with AI implemented using Pytorch. The snake is controlled by the AI which is trained using a simple feedforward neural network. The game is implemented using Pygame.
 
 ## Requirements
 - Python 3.6 or higher
 - Pytorch
-- Numpy
 - Pygame
-- matplotlib
+- Numpy
+- Matplotlib
 
 ## Installation
-
-- Clone the repository:
+1. Clone the repository
 ```bash
+git clone https://github.com/danielscos/Snake_AI.git
+```
+2. Install the required packages
+```bash
+pip install -r requirements.txt
+```
+you successfully installed the required packages.
+
+## Usage
+If you run snake_game_human.py you can play the game yourself. If you run agent.py the AI will play the game, the game will restart when the snake dies. the progression of the neural network can be seen on the matplotlib graph. the graph shows the score and the number of games of the neural network.
+As you can see, the neural network is learning to play the game, as the number of games increases the neural network becomes stronger.
+One way i like to call the "number of games" is the "generation" of the neural network, because each game the neural network reborns stronger then before, just like a generation of a species.
+
+## Thank you
+I hope you enjoy the game and the AI. If you have any questions or suggestions, feel free to contact me.
+
+## Project Made By - Daniel Grosso
