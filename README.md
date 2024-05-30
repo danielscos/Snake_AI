@@ -29,5 +29,5 @@ I hope you enjoy the game and the AI. If you have any questions or suggestions, 
 
 ## Project Made By - Daniel Grosso
 
-[![Alternate Text](./Screenshot%202024-05-31%20005555.png)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID "Showcase / Tutorial Video")
+[![Alternate Text](./Screenshot%202024-05-31%20005555.png)](https://youtu.be/SFEREJI355E "Showcase / Tutorial Video")
 ```
