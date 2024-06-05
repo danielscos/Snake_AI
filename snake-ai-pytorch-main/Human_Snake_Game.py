@@ -1,11 +1,11 @@
-import pygame
-import random
 from enum import Enum
+import random
 from collections import namedtuple
+import pygame
 
 pygame.init()
 font = pygame.font.Font('arial.ttf', 25)
-#font = pygame.font.SysFont('arial', 25)
+
 
 class Direction(Enum):
     RIGHT = 1
@@ -15,7 +15,7 @@ class Direction(Enum):
     
 Point = namedtuple('Point', 'x, y')
 
-# rgb colors
+
 WHITE = (255, 255, 255)
 RED = (200,0,0)
 BLUE1 = (0, 0, 255)
@@ -55,7 +55,6 @@ class SnakeGame:
             self._place_food()
         
     def play_step(self):
-        # 1. collect user input
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -70,27 +69,26 @@ class SnakeGame:
                 elif event.key == pygame.K_DOWN:
                     self.direction = Direction.DOWN
         
-        # 2. move
-        self._move(self.direction) # update the head
+
+        self._move(self.direction)
         self.snake.insert(0, self.head)
-        
-        # 3. check if game over
+
         game_over = False
         if self._is_collision():
             game_over = True
             return game_over, self.score
             
-        # 4. place new food or just move
+
         if self.head == self.food:
             self.score += 1
             self._place_food()
         else:
             self.snake.pop()
         
-        # 5. update ui and clock
+
         self._update_ui()
         self.clock.tick(SPEED)
-        # 6. return game over and score
+
         return game_over, self.score
     
     def _is_collision(self):
@@ -133,8 +131,7 @@ class SnakeGame:
 
 if __name__ == '__main__':
     game = SnakeGame()
-    
-    # game loop
+
     while True:
         game_over, score = game.play_step()
         

@@ -4,6 +4,8 @@ from IPython import display
 plt.ion()
 
 def plot(scores, mean_scores):
+    fig = plt.figure(1)
+    fig.clf()
     display.clear_output(wait=True)
     display.display(plt.gcf())
     plt.clf()

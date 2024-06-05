@@ -1,6 +1,6 @@
 # Snake AI Pytorch
 This is a simple snake game with AI implemented using Pytorch. The snake is controlled by the AI which is trained using a simple feedforward neural network. The game is implemented using Pygame.
-I got the idea from a youtube tutorial made by FreeCodeCamp, link below.
+I learned how to do this and got the idea from a youtube tutorial made by FreeCodeCamp, link below.
 ## Requirements
 - Python 3.6 or higher
 - Pytorch
@@ -27,8 +27,10 @@ One way i like to call the "number of games" is the "generation" of the neural n
 ## Thank you
 I hope you enjoy the game and the AI. If you have any questions or suggestions, feel free to contact me through this github repository.
 
+## Idea from: https://youtu.be/L8ypSXwyBds?si=IEBaJv1QuiMJ4eoW
+
 ## Project Made By - Daniel Grosso
-## Source: https://youtu.be/L8ypSXwyBds?si=IEBaJv1QuiMJ4eoW
+
 
 [![Alternate Text](./Screenshot%202024-05-31%20005555.png)](https://youtu.be/SFEREJI355E "Showcase / Tutorial Video")
 ```
