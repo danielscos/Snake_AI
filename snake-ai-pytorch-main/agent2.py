@@ -5,6 +5,7 @@ from collections import deque
 from game import SnakeGameAI, Direction, Point
 from model2 import Linear_QNet, QTrainer
 from helper import plot
+import keyboard
 
 MAX_MEMORY = 100_000
 BATCH_SIZE = 2000
@@ -133,7 +134,9 @@ def train():
 
             if score > record:
                 record = score
-                agent.model.save()
+
+
+
 
             print('Game', agent.n_games, 'Score', score, 'Record:', record)
 
@@ -143,6 +146,14 @@ def train():
             plot_mean_scores.append(mean_score)
             plot(plot_scores, plot_mean_scores)
 
+        # Save the model when the 's' key is pressed
+        if keyboard.is_pressed('s'):  # if key 's' is pressed
+            print('You Pressed A Key!')
+            agent.model.save()
 
+            # After saving the model, print its state_dict
+
+
+            break  # finish the loop
 if __name__ == '__main__':
     train()

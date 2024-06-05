@@ -3,14 +3,18 @@ import torch
 from agent import Agent, SnakeGameAI
 from model2 import Linear_QNet, QTrainer
 
-
 model = Linear_QNet(11, 256, 3)
 model.load_state_dict(torch.load('./model2/model2.pth'))
+model.eval()
+
+# After loading the model, print its state_dict
+
+
+# After loading the model, print its parameters
 
 
 game = SnakeGameAI()
 agent = Agent(model=model)
-
 
 while True:
     state_old = agent.get_state(game)
