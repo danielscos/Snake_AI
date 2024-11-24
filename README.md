@@ -27,4 +27,3 @@ One way i like to call the "number of games" is the "generation" of the neural n
 ## Thank you
 I hope you enjoy the game and the AI. If you have any questions or suggestions, feel free to contact me through this github repository.
 
-```
